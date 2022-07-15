@@ -1,0 +1,9 @@
+.cardsContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 5vh;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}

@@ -1,0 +1,100 @@
+.Card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 17rem;
+    height: 29vh;
+    color:#ffffff;
+  
+}
+
+.Card > img{
+    width: 3rem;
+    height: 5rem;
+    
+}
+
+.Card + .Card{
+    border-left: solid 1px;
+}
+
+.primary{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5vh 15vh;
+    width: 20rem;
+    padding: 0 0.5rem;
+    
+} 
+
+ .primary > span{
+    margin-top: 0.5rem;
+    grid-column: 1/span 2;
+   
+} 
+
+.primary > img{
+    width: 8rem;
+    height: 8rem;
+}
+
+.Temp{
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.Temp + .Temp{
+    margin-left: 1rem;
+}
+.Temps{
+    display: flex;
+}
+
+.button{
+    border: solid 2px transparent;
+    border-radius: 9999px;
+    display: flex;
+    justify-content:center;
+    width: 1rem;
+    padding: 0;
+    height:1.5rem;
+    align-items: center;
+    background-color: transparent;
+    transition: background-color 0.25s, color 0.25s;
+    cursor: pointer;
+    color:#ffffff;
+    margin-left: 14.5rem;
+    box-shadow: none;
+    outline: none;
+}
+.button:hover{
+background-color: #ffffffab;
+color:rgb(105, 116, 231); 
+}
+   
+.name{
+padding: 0.25rem 0.75rem;
+font-weight: 700;
+outline: transparent;
+color: black;
+box-shadow: transparent;
+text-decoration: transparent;
+}
+.name:hover{
+  text-decoration: none;
+  box-shadow: none;
+  color:#ffffff;
+  outline: transparent;
+  
+}
+.name:focus {
+  outline:none;
+  box-shadow: none;
+  text-decoration: none;
+}
+
