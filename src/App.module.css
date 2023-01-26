@@ -1,20 +1,20 @@
-.app{
+.app {
   top: 0;
-  bottom:0;
-  left:0;
+  bottom: 0;
+  left: 0;
   right: 0;
 }
-.backgroundImg{
+.backgroundImg {
   width: 100vw;
   height: 100vh;
   backdrop-filter: blur(16px);
   background-color: #77777770;
 }
 
-.container{
+.container {
   width: 90vw;
   height: 85vh;
-  margin:10vh;
+  margin: 10vh;
   top: 0;
   overflow: hidden;
   display: grid;
@@ -22,16 +22,16 @@
   grid-template-rows: 50vh 20vh;
 }
 
-.citiesContainer{
+.citiesContainer {
   display: flex;
   height: 35vh;
   background-color: #a0939396;
   backdrop-filter: blur(1px);
   justify-content: center;
-  }
-  
+}
+
 .app,
-.container{
+.container {
   background-image: url(./assets/bgImage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,4 +42,27 @@
 a:-webkit-any-link {
   text-decoration: none;
   color: inherit;
+}
+
+.homeText {
+  text-align: center;
+  width: 70vw;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  font-size: 2rem;
+}
+
+@media all and (max-width: 1024px) {
+  .citiesContainer {
+    height: 35vh;
+    width: 59rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .citiesContainer {
+    justify-content: center;
+    height: 36vh;
+    width: 44rem;
+  }
 }
